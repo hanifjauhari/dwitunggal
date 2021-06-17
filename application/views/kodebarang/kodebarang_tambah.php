@@ -8,15 +8,8 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>Tambah kode barang</h1>
-                    <p>Deskripsi menu . . . .</p>
+                    <p></p>
 
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                        <li class="breadcrumb-item active">Fixed Navbar Layout</li>
-                    </ol>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -35,23 +28,23 @@
 
                         <?php
 
-                            $prefix = "";
-                            $nilai  = "";
-                            $digit  = "";
+                        $prefix = "";
+                        $nilai  = "";
+                        $digit  = "";
 
 
-                            // cek apakah kode barang ada ? 
-                            if ( $kode_barang->num_rows() > 0 ) {
+                        // cek apakah kode barang ada ? 
+                        if ($kode_barang->num_rows() > 0) {
 
-                                $kolom = $kode_barang->row_array();
-                                
-                                
-                                // isi nilai
-                                $prefix = $kolom['prefix'];
-                                $nilai  = $kolom['nilai'];
-                                $digit  = $kolom['digit'];
-                            }
-                            
+                            $kolom = $kode_barang->row_array();
+
+
+                            // isi nilai
+                            $prefix = $kolom['prefix'];
+                            $nilai  = $kolom['nilai'];
+                            $digit  = $kolom['digit'];
+                        }
+
 
 
                         ?>

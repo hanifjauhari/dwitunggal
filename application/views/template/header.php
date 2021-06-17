@@ -72,8 +72,8 @@
                with font-awesome or any other icon font library -->
 
             <li class="nav-item has-treeview">
-              <a href="" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+              <a href="<?php echo site_url('C_dashboard/index') ?>" class="nav-link">
+                <i class="nav-icon fas fa-address-book"></i>
                 <p>
                   Dashboard
                 </p>
@@ -149,18 +149,6 @@
                   <i class="nav-icon far fa-id-card"></i>
                   <p>
                     Penjadwalan
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item has-treeview">
-                <a href="<?php echo site_url('C_alamat/index') ?>" class="nav-link">
-                  <i class="nav-icon fas fa-home"></i>
-                  <p>
-
-                    Alamat
-
-
                   </p>
                 </a>
               </li>

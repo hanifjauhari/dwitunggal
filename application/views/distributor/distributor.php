@@ -8,15 +8,9 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>Tambah Data Distributor</h1>
+                    <p></p>
                     <a href="<?php echo site_url('C_distributor/tambah') ?>" class="btn btn-primary">Tambah Data Distributor</a>
 
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Layout</a></li>
-                        <li class="breadcrumb-item active">Fixed Navbar Layout</li>
-                    </ol>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -60,7 +54,7 @@
                                             <td width="15%"><?php echo $kolom['nama_distributor'] ?></td>
                                             <td width="15%"><?php echo $kolom['email'] ?></td>
                                             <td width="15%"><?php echo $kolom['telpon'] ?></td>
-                                            
+
                                             <td width="10%">
                                                 <a class="btn btn-danger btn-xs" href="<?php echo site_url('C_distributor/prosesdelete/' . $kolom['id_distributor']) ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini ? ')">
                                                     Hapus

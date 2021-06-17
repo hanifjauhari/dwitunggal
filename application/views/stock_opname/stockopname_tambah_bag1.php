@@ -16,7 +16,7 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>Tambah Stock Opname</h1>
-                    <p>Deskripsi menu . . . .</p>
+                    <p></p>
 
                 </div>
                 <div class="col-sm-6">
@@ -56,12 +56,12 @@
                                 <!-- radio -->
                                 <div class="form-group">
                                     <div class="custom-control custom-radio">
-                                    <input class="custom-control-input" type="radio" id="customRadio1" name="jenis_opname" value="masuk" checked>
-                                    <label for="customRadio1" class="custom-control-label">Stok Masuk</label>
+                                        <input class="custom-control-input" type="radio" id="customRadio1" name="jenis_opname" value="masuk" checked>
+                                        <label for="customRadio1" class="custom-control-label">Stok Masuk</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                    <input class="custom-control-input" type="radio" id="customRadio2" name="jenis_opname" value="keluar">
-                                    <label for="customRadio2" class="custom-control-label">Stok Keluar</label>
+                                        <input class="custom-control-input" type="radio" id="customRadio2" name="jenis_opname" value="keluar">
+                                        <label for="customRadio2" class="custom-control-label">Stok Keluar</label>
                                     </div>
                                 </div>
                                 <small>jenis_opname</small>
@@ -76,9 +76,9 @@
 
                             <div class="form-group">
                                 <label for="">Barang</label>
-                                <select  name="barang[]" class="duallistbox" multiple="multiple">
-                                    <?php foreach ( $barang->result_array() AS $kolom ) : ?>
-                                    <option value="<?php echo $kolom['id_barang'] ?>"><?php echo $kolom['kode_barang'].' '.$kolom['nama_barang'] ?></option>
+                                <select name="barang[]" class="duallistbox" multiple="multiple">
+                                    <?php foreach ($barang->result_array() as $kolom) : ?>
+                                        <option value="<?php echo $kolom['id_barang'] ?>"><?php echo $kolom['kode_barang'] . ' ' . $kolom['nama_barang'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -106,13 +106,10 @@
 <!-- Bootstrap4 Duallistbox -->
 <script src="<?php echo base_url() ?>assets/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
 <script>
-
-
     $(function() {
 
 
         //Bootstrap Duallistbox
         $('.duallistbox').bootstrapDualListbox()
     });
-
 </script>
